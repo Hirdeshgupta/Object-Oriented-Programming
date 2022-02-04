@@ -11,7 +11,9 @@ class Employee
         nums++;
     }
 };
-int Employee :: nums=0; 
+int Employee :: nums; 
+// Default Value setted to Zero 
+
 int main()
 {
     Employee c1,c2,c3;

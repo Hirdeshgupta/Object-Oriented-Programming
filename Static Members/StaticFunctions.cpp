@@ -1,21 +1,26 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-int fun()
+class Employee
 {
-    static int x=0;
-    // Static Variables lifetime throughout the programme 
-    // Value of static Varibale is Zero
-    int y=0;
-    x++;
-    y++;
-    cout<<x<<" "<<y<<endl;
-    // Containes Garbage value ..
+    string name;
+    int id;
+    static int nums;
+    public:
+    Employee()
+    {
+        nums++;
+    }
+    static void  getNum()
+    {
+        cout<<nums<<endl;
+    }
+};
+int Employee :: nums; 
+// Default Value setted to Zero 
 
-}
 int main()
 {
-    fun();
-    fun();
-    fun();
+    Employee c1,c2,c3;
+    Employee::getNum();
     return 0;
 }
